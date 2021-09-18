@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<title>{{{ pagedata.meta.page_title }}}</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="{{{ pagedata.meta.meta_description }}}" /><% if(pagedata.meta.meta_keywords !== "") {%>
+	<meta name="keywords" content="{{{ pagedata.meta.meta_keywords }}}" /><%}%>
+	<% if(pagedata.meta.og_tags && typeof pagedata.meta.og_tags === 'object') {%> <% if(pagedata.meta.og_tags["fb:pages"] && Array.isArray(pagedata.meta.og_tags['fb:pages']) && pagedata.meta.og_tags['fb:pages'].length > 0 ) {%> <% pagedata.meta.og_tags["fb:pages"].forEach(function(tag) { %>
+	<meta property="fb:pages" content="{{{ tag }}}" /><%})%><%}%><% if(pagedata.meta.og_tags["fb:pages"] && typeof pagedata.meta.og_tags["fb:pages"] ==='string'){%><meta property="fb:pages" content="{{{ pagedata.meta.og_tags['fb:pages'] }}}" /><%}%><% if(pagedata.meta.og_tags["title"]) {%>
+	<meta property="og:title" content="{{{ pagedata.meta.og_tags['title'] }}}" /><% } else {  %><meta property="og:title" content="{{{ pagedata.meta.page_title }}}" /><% } %> <% if(pagedata.meta.og_tags["description"]) {%>
+	<meta property="og:description" content="{{{ pagedata.meta.og_tags['description'] }}}" /><% } else {  %><meta property="og:description" content="{{{ pagedata.meta.meta_description }}}" /><% } %><% if(pagedata.meta.og_tags["image"]) {%>
+	<meta property="og:image" content="{{{ pagedata.meta.og_tags['image'] }}}" /><%}%>
+	<meta property="og:image:alt" content="Logo for WebMD" /><% if(pagedata.meta.og_tags["url"]) {%>
+	<meta property="og:url" content="{{{ pagedata.meta.og_tags['url'] }}}" />
+	<%}%><% if(pagedata.meta.og_tags["site_name"]) {%>
+	<meta property="og:site_name" content="{{{ pagedata.meta.og_tags['site_name'] }}}" /><%}%> <% if(pagedata.meta.og_tags["type"]) {%>
+	<meta property="og:type" content="{{{ pagedata.meta.og_tags['type'] }}}" /><%}%><% if(pagedata.meta.og_tags["locale"]) {%>
+	<meta property="og:locale" content="{{{ pagedata.meta.og_tags['locale'] }}}" /><%}%> <% if(pagedata.meta.og_tags["fb:app_id"]) {%>
+	<meta property="fb:app_id" content="{{{ pagedata.meta.og_tags['fb:app_id'] }}}" /><%}%> <% if(pagedata.meta.og_tags["article:author"]) {%>
+	<meta property="article:author" content="{{{ pagedata.meta.og_tags['article:author'] }}}" /><%}%> <% if(pagedata.meta.og_tags["article:publisher"]) {%>
+	<meta property="article:publisher" content="{{{ pagedata.meta.og_tags['article:publisher'] }}}" /><%}%><%}%><% if(pagedata.meta.is_external_searchable === false) {%>
+	<meta name="robots" content="noindex, follow" /><%}%>
+	<% if(pagedata.canonicalurl) {%><link rel="canonical" href="{{{ pagedata.canonicalurl }}}" />
+	<%} else if(pagedata.meta.canonicalurl) {%><link rel="canonical" href="{{{ pagedata.meta.canonicalurl }}}" />
+	<%}%>
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC" />
+	<link rel="shortcut icon" href="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/favicon/webmd.ico"/>
+	<link rel="apple-touch-icon-precomposed" type="text/css" href="/favico/apple-touch-icon-precomposed.png"/>
+	<link rel="apple-touch-icon-precomposed" type="text/css" sizes="72x72" href="/favico/apple-touch-icon-72x72-precomposed.png"/>
+	<link rel="apple-touch-icon-precomposed" type="text/css" sizes="114x114" href="/favico/apple-touch-icon-114x114-precomposed.png"/>
+
+	<link rel="preconnect" href="//www.googletagservices.com" />
+	<link rel="preconnect" href="//img.webmd.com" />
+	<link rel="preconnect" href="//css.webmd.com" />
+	<link rel="preconnect" href="//js.webmd.com" />
+	<link rel="preconnect" href="//polyfill.io" />
+	<link rel="preconnect" href="//sb.scorecardresearch.com" />
+	<link rel="preconnect" href="//ssl.o.webmd.com" />
+	<link rel="preconnect" href="//webmdcom.tt.omtrdc.net" />
+	<link rel="preconnect" href="//securepubads.g.doubleclick.net" />
+	<link rel="preconnect" href="//c.amazon-adsystem.com" />
+
+	<script type="text/javascript"><% Object.keys(pagedata.omniture).forEach(function(data){%>
+		{{'\t\t\t'}}var {{data}}='{{pagedata.omniture[data]}}';{{' '}}<%})%>
+	{{'\t\t'}}</script>
+
+	<% if(pagedata.headHTML) {%>
+	{{{pagedata.headHTML}}}
+	<% } %>
+
+
+	<% if(process.env.ENV==="production") {%>
+	<script id="launchtags" src="//assets.adobedtm.com/2c8c1e17b98c/ab4d0d5e49e0/launch-529817435ade.min.js"  async></script>
+	<% } else if (process.env.ENV==="staging") { %>
+	<script id="launchtags" src="//assets.adobedtm.com/2c8c1e17b98c/ab4d0d5e49e0/launch-b284bb88c3ef-staging.min.js"  async></script>
+	<% } else { %>
+	<script id="launchtags" src="//assets.adobedtm.com/2c8c1e17b98c/ab4d0d5e49e0/launch-0da98d989bb3-development.min.js" async></script>
+	<%} %>
+	{{{ renderResourceHints() }}}
+	{{{ renderStyles() }}}
+</head>
+<body>
+<!--vue-ssr-outlet-->
+{{{ renderState() }}}
+<!--$$NGINX_TARGET$$-->
+<!--$$CLOUDFLARE_TARGET$$-->
+{{{ renderScripts() }}}
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=es2015%2Ces2016%2Ces2017%2Ces5%2Ces6%2Ces7%2Cdefault%2CNodeList.prototype.forEach"></script>
+<%if(pagedata.scripts && pagedata.scripts.length >0) { pagedata.scripts.map(function(m,i){%> <script src="{{pagedata.scripts[i]}}" defer async ></script> <%});}%>
+<% if(pagedata && pagedata.jsonld){%><script  type='application/ld+json'>{{{pagedata.jsonld}}}</script><%}%>
+</body>
+</html>

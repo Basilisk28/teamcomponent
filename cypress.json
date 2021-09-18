@@ -1,0 +1,13 @@
+{
+	"pluginsFile": "tests/e2e/plugins/index.js",
+	"chromeWebSecurity": false,
+	"pageLoadTimeout": 100000,
+	"defaultCommandTimeout": 7000,
+	"video": false,
+	"blacklistHosts": [
+		"c.amazon-adsystem.com"
+	],
+	"reporter": "mocha-allure-reporter",
+  	"viewportWidth": 1280,
+  	"viewportHeight": 800
+}

@@ -1,0 +1,686 @@
+@font-face {
+	font-family: 'MDX-Icons';
+	font-display: block;
+	src: url("./MDX-Icons.woff2") format("woff2"),
+	url("./MDX-Icons.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mdx-icons, i {
+	font-family: 'MDX-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icons-sort-amount-asc:before {
+	content: "\e900";
+}
+.icons-sort-amount-desc:before {
+	content: "\e901";
+}
+.icons-account-cirlce:before {
+	content: "\e902";
+}
+.icons-acupuncture:before {
+	content: "\e903";
+}
+.icons-alarm:before {
+	content: "\e904";
+}
+.icons-alert:before {
+	content: "\e905";
+}
+.icons-ambulance:before {
+	content: "\e906";
+}
+.icons-angle-double-left:before {
+	content: "\e907";
+}
+.icons-angle-double-right:before {
+	content: "\e908";
+}
+.icons-angle-left:before {
+	content: "\e909";
+}
+.icons-angle-right:before {
+	content: "\e90a";
+}
+.icons-apps:before {
+	content: "\e90b";
+}
+.icons-area-chart:before {
+	content: "\e90c";
+}
+.icons-arrow-left:before {
+	content: "\e90d";
+}
+.icons-arrow-right:before {
+	content: "\e90e";
+}
+.icons-award:before {
+	content: "\e90f";
+}
+.icons-band-aid:before {
+	content: "\e910";
+}
+.icons-bar-chart:before {
+	content: "\e911";
+}
+.icons-bed:before {
+	content: "\e912";
+}
+.icons-bookmark-o:before {
+	content: "\e913";
+}
+.icons-bookmark:before {
+	content: "\e914";
+}
+.icons-building-o:before {
+	content: "\e915";
+}
+.icons-building:before {
+	content: "\e916";
+}
+.icons-bullhorn:before {
+	content: "\e917";
+}
+.icons-bus:before {
+	content: "\e918";
+}
+.icons-calendar-o:before {
+	content: "\e919";
+}
+.icons-calendar:before {
+	content: "\e91a";
+}
+.icons-cancel-circle:before {
+	content: "\e91b";
+}
+.icons-cancel:before {
+	content: "\e91c";
+}
+.icons-car:before {
+	content: "\e91d";
+}
+.icons-cell-phone:before {
+	content: "\e91e";
+}
+.icons-certified:before {
+	content: "\e91f";
+}
+.icons-check-all:before {
+	content: "\e920";
+}
+.icons-check-circle-o:before {
+	content: "\e921";
+}
+.icons-check-circle:before {
+	content: "\e922";
+}
+.icons-check-square-o:before {
+	content: "\e923";
+}
+.icons-check-square:before {
+	content: "\e924";
+}
+.icons-check:before {
+	content: "\e925";
+}
+.icons-chevron-down:before {
+	content: "\e926";
+}
+.icons-chevron-left:before {
+	content: "\e927";
+}
+.icons-chevron-right:before {
+	content: "\e928";
+}
+.icons-chevron-up:before {
+	content: "\e929";
+}
+.icons-chiropractics:before {
+	content: "\e92a";
+}
+.icons-circle-down:before {
+	content: "\e92b";
+}
+.icons-circle-left:before {
+	content: "\e92c";
+}
+.icons-circle-right:before {
+	content: "\e92d";
+}
+.icons-circle-up:before {
+	content: "\e92e";
+}
+.icons-city-alt:before {
+	content: "\e92f";
+}
+.icons-city:before {
+	content: "\e930";
+}
+.icons-clock:before {
+	content: "\e931";
+}
+.icons-comment:before {
+	content: "\e932";
+}
+.icons-comments:before {
+	content: "\e933";
+}
+.icons-compass-needle:before {
+	content: "\e934";
+}
+.icons-compounding:before {
+	content: "\e935";
+}
+.icons-contacts:before {
+	content: "\e936";
+}
+.icons-crutches:before {
+	content: "\e937";
+}
+.icons-delivery-service:before {
+	content: "\e938";
+}
+.icons-dentist-o:before {
+	content: "\e939";
+}
+.icons-dentist:before {
+	content: "\e93a";
+}
+.icons-dermatology:before {
+	content: "\e93b";
+}
+.icons-desktop:before {
+	content: "\e93c";
+}
+.icons-diabetes:before {
+	content: "\e93d";
+}
+.icons-dna:before {
+	content: "\e93e";
+}
+.icons-drive-up:before {
+	content: "\e93f";
+}
+.icons-drop-down-circle:before {
+	content: "\e940";
+}
+.icons-drop-down:before {
+	content: "\e941";
+}
+.icons-drop-up:before {
+	content: "\e942";
+}
+.icons-email:before {
+	content: "\e943";
+}
+.icons-emergency-service:before {
+	content: "\e944";
+}
+.icons-facebook:before {
+	content: "\e945";
+}
+.icons-family-medicine:before {
+	content: "\e946";
+}
+.icons-fax:before {
+	content: "\e947";
+}
+.icons-female:before {
+	content: "\e948";
+}
+.icons-filter-list2:before {
+	content: "\e949";
+}
+.icons-filter-list:before {
+	content: "\e94a";
+}
+.icons-flower:before {
+	content: "\e94b";
+}
+.icons-full-screen-exit:before {
+	content: "\e94c";
+}
+.icons-full-screen:before {
+	content: "\e94d";
+}
+.icons-genealogy:before {
+	content: "\e94e";
+}
+.icons-globe:before {
+	content: "\e94f";
+}
+.icons-google-plus:before {
+	content: "\e950";
+}
+.icons-h-square:before {
+	content: "\e951";
+}
+.icons-heart-beat:before {
+	content: "\e952";
+}
+.icons-heart-o:before {
+	content: "\e953";
+}
+.icons-heart:before {
+	content: "\e954";
+}
+.icons-help:before {
+	content: "\e955";
+}
+.icons-hip-replacement:before {
+	content: "\e956";
+}
+.icons-home:before {
+	content: "\e957";
+}
+.icons-hospital-plus:before {
+	content: "\e958";
+}
+.icons-hospital:before {
+	content: "\e959";
+}
+.icons-id-card:before {
+	content: "\e95a";
+}
+.icons-info-o:before {
+	content: "\e95b";
+}
+.icons-info:before {
+	content: "\e95c";
+}
+.icons-kidney:before {
+	content: "\e95d";
+}
+.icons-label-o:before {
+	content: "\e95e";
+}
+.icons-label:before {
+	content: "\e95f";
+}
+.icons-language-globe:before {
+	content: "\e960";
+}
+.icons-language:before {
+	content: "\e961";
+}
+.icons-laptop:before {
+	content: "\e962";
+}
+.icons-legal-medicine:before {
+	content: "\e963";
+}
+.icons-linkedin:before {
+	content: "\e964";
+}
+.icons-list:before {
+	content: "\e965";
+}
+.icons-liver:before {
+	content: "\e966";
+}
+.icons-local-library:before {
+	content: "\e967";
+}
+.icons-long-arrow-down:before {
+	content: "\e968";
+}
+.icons-long-arrow-up:before {
+	content: "\e969";
+}
+.icons-lungs:before {
+	content: "\e96a";
+}
+.icons-male-female:before {
+	content: "\e96b";
+}
+.icons-male:before {
+	content: "\e96c";
+}
+.icons-map-pin:before {
+	content: "\e96d";
+}
+.icons-map:before {
+	content: "\e96e";
+}
+.icons-medical-face:before {
+	content: "\e96f";
+}
+.icons-medkit:before {
+	content: "\e970";
+}
+.icons-menu:before {
+	content: "\e971";
+}
+.icons-messenger:before {
+	content: "\e972";
+}
+.icons-migraines:before {
+	content: "\e973";
+}
+.icons-minus-circle:before {
+	content: "\e974";
+}
+.icons-minus-square-o:before {
+	content: "\e975";
+}
+.icons-minus-square:before {
+	content: "\e976";
+}
+.icons-minus:before {
+	content: "\e977";
+}
+.icons-moon:before {
+	content: "\e978";
+}
+.icons-more-horiz:before {
+	content: "\e979";
+}
+.icons-more-vert:before {
+	content: "\e97a";
+}
+.icons-nature-people:before {
+	content: "\e97b";
+}
+.icons-needle:before {
+	content: "\e97c";
+}
+.icons-neuro:before {
+	content: "\e97d";
+}
+.icons-notifications-none:before {
+	content: "\e97e";
+}
+.icons-notifications:before {
+	content: "\e97f";
+}
+.icons-nuclear-medicine:before {
+	content: "\e980";
+}
+.icons-nurse:before {
+	content: "\e981";
+}
+.icons-online-prescriptions:before {
+	content: "\e982";
+}
+.icons-optomitrist:before {
+	content: "\e983";
+}
+.icons-orthopedic:before {
+	content: "\e984";
+}
+.icons-pain-medicine:before {
+	content: "\e985";
+}
+.icons-pathology:before {
+	content: "\e986";
+}
+.icons-payment:before {
+	content: "\e987";
+}
+.icons-pediatric-medicine:before {
+	content: "\e988";
+}
+.icons-pencil-square:before {
+	content: "\e989";
+}
+.icons-pencil:before {
+	content: "\e98a";
+}
+.icons-people-o:before {
+	content: "\e98b";
+}
+.icons-people:before {
+	content: "\e98c";
+}
+.icons-person-o:before {
+	content: "\e98d";
+}
+.icons-person:before {
+	content: "\e98e";
+}
+.icons-pharmacy:before {
+	content: "\e98f";
+}
+.icons-phone:before {
+	content: "\e990";
+}
+.icons-photo:before {
+	content: "\e991";
+}
+.icons-physical-therapy:before {
+	content: "\e992";
+}
+.icons-physical:before {
+	content: "\e993";
+}
+.icons-pie-chart:before {
+	content: "\e994";
+}
+.icons-pill-bottle:before {
+	content: "\e995";
+}
+.icons-pill-rx:before {
+	content: "\e996";
+}
+.icons-pill-skull:before {
+	content: "\e997";
+}
+.icons-pill:before {
+	content: "\e998";
+}
+.icons-pin-drop:before {
+	content: "\e999";
+}
+.icons-pinterest:before {
+	content: "\e99a";
+}
+.icons-plastic-surgery:before {
+	content: "\e99b";
+}
+.icons-plus-circle:before {
+	content: "\e99c";
+}
+.icons-plus-square-o:before {
+	content: "\e99d";
+}
+.icons-plus-square:before {
+	content: "\e99e";
+}
+.icons-plus:before {
+	content: "\e99f";
+}
+.icons-podiatry:before {
+	content: "\e9a0";
+}
+.icons-print:before {
+	content: "\e9a1";
+}
+.icons-psych:before {
+	content: "\e9a2";
+}
+.icons-question:before {
+	content: "\e9a3";
+}
+.icons-radiology:before {
+	content: "\e9a4";
+}
+.icons-random:before {
+	content: "\e9a5";
+}
+.icons-recent-providers:before {
+	content: "\e9a6";
+}
+.icons-refresh:before {
+	content: "\e9a7";
+}
+.icons-ribbon:before {
+	content: "\e9a8";
+}
+.icons-rss:before {
+	content: "\e9a9";
+}
+.icons-scalpel:before {
+	content: "\e9aa";
+}
+.icons-school:before {
+	content: "\e9ab";
+}
+.icons-search-replace:before {
+	content: "\e9ac";
+}
+.icons-search:before {
+	content: "\e9ad";
+}
+.icons-settings-display:before {
+	content: "\e9ae";
+}
+.icons-settings:before {
+	content: "\e9af";
+}
+.icons-share:before {
+	content: "\e9b0";
+}
+.icons-sign-in:before {
+	content: "\e9b1";
+}
+.icons-sign-out:before {
+	content: "\e9b2";
+}
+.icons-siren:before {
+	content: "\e9b3";
+}
+.icons-smile-dissatisfied:before {
+	content: "\e9b4";
+}
+.icons-smile-highly-dissatisfied:before {
+	content: "\e9b5";
+}
+.icons-smile-highly-satisfied:before {
+	content: "\e9b6";
+}
+.icons-smile-neutral:before {
+	content: "\e9b7";
+}
+.icons-smile-satisfied:before {
+	content: "\e9b8";
+}
+.icons-star-half:before {
+	content: "\e9b9";
+}
+.icons-star-outline:before {
+	content: "\e9ba";
+}
+.icons-star:before {
+	content: "\e9bb";
+}
+.icons-stethoscope:before {
+	content: "\e9bc";
+}
+.icons-swap:before {
+	content: "\e9bd";
+}
+.icons-tablet:before {
+	content: "\e9be";
+}
+.icons-test-tube:before {
+	content: "\e9bf";
+}
+.icons-thermometer:before {
+	content: "\e9c0";
+}
+.icons-thumb-up-down:before {
+	content: "\e9c1";
+}
+.icons-thumbs-down:before {
+	content: "\e9c2";
+}
+.icons-thumbs-up:before {
+	content: "\e9c3";
+}
+.icons-today:before {
+	content: "\e9c4";
+}
+.icons-translate:before {
+	content: "\e9c5";
+}
+.icons-trending-down:before {
+	content: "\e9c6";
+}
+.icons-trending-neutral:before {
+	content: "\e9c7";
+}
+.icons-trending-up:before {
+	content: "\e9c8";
+}
+.icons-turning-sign2:before {
+	content: "\e9c9";
+}
+.icons-turning-sign:before {
+	content: "\e9ca";
+}
+.icons-twitter:before {
+	content: "\e9cb";
+}
+.icons-unfold-less:before {
+	content: "\e9cc";
+}
+.icons-unfold-more:before {
+	content: "\e9cd";
+}
+.icons-urology:before {
+	content: "\e9ce";
+}
+.icons-usd:before {
+	content: "\e9cf";
+}
+.icons-user-md:before {
+	content: "\e9d0";
+}
+.icons-verified-user:before {
+	content: "\e9d1";
+}
+.icons-view-dashboard:before {
+	content: "\e9d2";
+}
+.icons-view:before {
+	content: "\e9d3";
+}
+.icons-visibility-off:before {
+	content: "\e9d4";
+}
+.icons-visibility:before {
+	content: "\e9d5";
+}
+.icons-walk-in:before {
+	content: "\e9d6";
+}
+.icons-walk:before {
+	content: "\e9d7";
+}
+.icons-wallet-membership:before {
+	content: "\e9d8";
+}
+.icons-wallet-travel:before {
+	content: "\e9d9";
+}
+.icons-wheelchair:before {
+	content: "\e9da";
+}
+.icons-video:before {
+	content: "\e9db";
+}
+.icons-featured-star:before {
+	content: "\e9dc";
+}

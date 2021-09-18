@@ -1,0 +1,9 @@
+FROM webmd-docker-local.artifactory.internetbrands.com/consumer/vuebuilder:latest as builder
+
+WORKDIR /app
+
+RUN ls
+
+COPY . ./
+
+CMD ["npm", "run", "serve"]
